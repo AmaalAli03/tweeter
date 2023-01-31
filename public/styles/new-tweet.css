@@ -1,0 +1,35 @@
+.tweet-button{
+  background-color:#4056A1 ;
+  font-family: "Bungee";
+  color: #FFFFFF;
+  border:none;
+}
+/* .tweet-words{
+  font-weight: bold;
+  font-family: "Source Sans Pro";
+  border-bottom: 3px solid black ; 
+  
+} */
+.counter{
+  font-weight: bold;
+  font-family: "Bungee";
+}
+textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-weight: bold;
+  font-family: "Source Sans Pro";
+  border-bottom: 3px solid black ; 
+  width: 90vw;
+  height: 45px;
+}
+.tweet-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.countLimit{
+  color:red
+}
