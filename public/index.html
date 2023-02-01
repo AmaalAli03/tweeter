@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -58,25 +60,40 @@
   <!-- Page-specific (main) content here -->
   <main class="main-container">
     <section class="new-tweet">
-      <!-- <script>
-        document.addEventListener("keypress", (event) => {
-          // console.log(event);
-          console.log("You have ikeypress ",this.event);
-        });
-
-    // your code here
-      </script> -->
       <h2>What are you humming about?</h2>
       <form method="POST" action="/tweets">
         <div class="tweet-words">
           <textarea placeholder="Tell me what you're humming about!" name="text" id="tweet-text"></textarea>
         </div>
-        <div class="tweet-footer">
+        <div class="tweet-footer1">
           <button class="tweet-button" type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text" >140</output>
+          <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
-      
+      <section class="tweet-container">
+        <div class="article-box">
+          <article class="article">
+            <div class="avatar-username">
+              <div class="avatar-name">
+                <h1 class="avatar-image"><img src="/images/profile-hex.png"></h1>
+              </div>
+              <div class="user-names">
+                <div class="name">Newton</div>
+                <div class="user-name">@sirIsaac</div>
+              </div>
+            </div>
+            <h5 class="actual-tweet">If I have seen further it is by standing on the shoulders of giants</h5>
+            <footer class="tweet-footer2">
+              <div class="time">10 Days Ago</div>
+              <div class="tweet-icons">
+                <output name="retweet" class="fa-solid fa-flag icon" for="tweet-container"></output>
+                <output name="retweet" class="fa-solid fa-retweet icon" for="tweet-container"></output>
+                <output name="like" class="fa-solid fa-heart icon" for="tweet-container"></output>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </section>
     </section>
   </main>
 </body>

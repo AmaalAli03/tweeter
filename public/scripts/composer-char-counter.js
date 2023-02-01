@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("#tweet-text").on("input",function () {
     let maxCount = 140;
     // console.log($(this).val().length);
-    let count = $('.tweet-footer').find('.counter');
+    let count = $('.tweet-footer1').find('.counter');
     console.log(count);
     let countChar = $(this).val().length;
     let countRemainder = maxCount - countChar;
