@@ -20,7 +20,20 @@ nav {
 }
 .fa-solid.fa-angles-down{
   color: red;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
+.bounce-1{
+  margin-top: 10px;
+  animation-name: bounce-1;
+        animation-timing-function: linear;
+    }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-7px); }
+        100% { transform: translateY(0); }
+    }
+
 .angles-down{
   display:flex;
   flex-direction:column;
