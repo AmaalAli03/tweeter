@@ -1,3 +1,7 @@
+/* .tweets-container{
+  margin: 0 20rem;
+
+} */
 .article {
   border: 3px solid black;
   margin-top: 13px;
@@ -9,6 +13,9 @@
 }
 .article-box:hover {
   box-shadow: 7px 7px 15px rgb(71, 107, 153);
+}
+.icon{
+  padding: 0 5px;
 }
 .icon:hover{
   color:rgb(197, 170, 17);
@@ -29,14 +36,18 @@
   display: flex;
   justify-content: right;
 }
+.tweet-icons:hover{
+  text-shadow:rgb(71, 107, 153) 4px 1px 20px;
+}
 
 .actual-tweet {
   border-bottom: 3px solid black;
-  width: 88vw;
+  /* width:  43vw; */
   height: 45px;
   padding-left: 15px;
   margin: auto;
   font-family: "Source Sans Pro";
+  /* background-color: brown; */
 }
 
 .avatar-name {

@@ -6,6 +6,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  $(".angles-down").on("click", function () {
+    $('.new-tweet').toggle();
+    $('.tweet-words').focus();
+  });
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -38,7 +42,7 @@ $(document).ready(function() {
 <footer class="tweet-footer2">
   <div class="time"> ${timeago.format(tweet.created_at)}</div>
   <div class="tweet-icons">
-    <output name="retweet" class="fa-solid fa-flag icon" for="tweet-container"></output>
+    <output name="flag" class="fa-solid fa-flag icon" for="tweet-container"></output>
     <output name="retweet" class="fa-solid fa-retweet icon" for="tweet-container"></output>
     <output name="like" class="fa-solid fa-heart icon" for="tweet-container"></output>
   </div>
@@ -54,11 +58,11 @@ $(document).ready(function() {
     let tweetText = $("#tweet-text").val();
     let maxCharLength = 140;
     if (tweetText.length === 0) {
-      const errorText = $('<i class="fa-solid fa-triangle-exclamation"></i> <span>No tweet formulated 😅 Tell us what you\'re humming about!</span><i class="fa-solid fa-triangle-exclamation"></i>');
+      const errorText = $('<i class="fa-solid fa-triangle-exclamation"></i>&nbsp;<span>No tweet formulated...😅 Tell us what you\'re humming about!</span>&nbsp;<i class="fa-solid fa-triangle-exclamation"></i>');
       $('.tweet-error-message').html(errorText);
       $('.tweet-error-message').slideDown();
     } else if (tweetText.length > maxCharLength) {
-      const errorText = $('<i class="fa-solid fa-triangle-exclamation"></i> <span>You\'ve gone over the maximum character limit of 140 characters🤯</span><i class="fa-solid fa-triangle-exclamation"></i>');
+      const errorText = $('<i class="fa-solid fa-triangle-exclamation"></i>&nbsp;<span>You\'ve gone over the maximum character limit of 140 characters 🤯</span>&nbsp;<i class="fa-solid fa-triangle-exclamation"></i>');
       $('.tweet-error-message').html(errorText);
       $('.tweet-error-message').slideDown();
     } else {
@@ -77,8 +81,12 @@ $(document).ready(function() {
       });
     }
   });
-
+  
   const loadTweets = () => {
+    // $(".tweets-container").empty();
+    // $(".form")[0].reset();
+    $("#tweet-text").val("");
+    $(".counter").text(140);
     $.ajax({
       url: `/tweets`,
       // data: data,

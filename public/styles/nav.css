@@ -1,7 +1,7 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
+  background-color: #545149;
   color: #FFFFFF;
   /* font-family: "Bungee"; */
 
@@ -13,13 +13,15 @@ nav {
   font-family: "Bungee";
   font-size: xx-large;
 }
+
+
 .write-tweet {
   font-family: "Source Sans Pro";
   font-size: large;
   /* color:#FFFFFF */
 }
 .fa-solid.fa-angles-down{
-  color: red;
+  color: rgb(197, 170, 17);
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }

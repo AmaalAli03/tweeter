@@ -29,6 +29,9 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ /* .header-main{
+  width:100vw;
+   } */
  .main-container{
  width: 90%;
 

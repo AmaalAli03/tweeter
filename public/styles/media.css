@@ -1,0 +1,78 @@
+/* @media only screen and (min-width: 1024px) {  
+
+  .main-container {
+    width: 45%; 
+    float: right;
+    display:column;
+    justify-content: 
+  }
+} */
+/* main css styling is the mobile size */
+/* desktop view and tablet */
+@media only screen and (max-width: 1024px) {
+
+  .main-container{
+    width: 100%;
+  }
+  .header{
+    width: 100%; 
+    margin-top:0px;
+  }
+  .header-main {
+    width: 100%;
+ 
+  }
+
+  .new-tweet{
+    margin-right: 3rem;
+    margin-left: 4.5rem;
+    width: 85%;
+  }
+  .tweets-container {
+    padding-right: 3em;
+    margin-left: 3em;
+    /* width: 92%; */
+  }
+  nav {
+    background-color: transparent;
+}
+.nav-container{
+    background-color: transparent;
+}
+}
+
+@media only screen and (min-width:1024px) {
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 7rem;
+    /* flex-direction: column; */
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+
+  }
+
+  .header {
+    padding: 5rem;
+    margin-left: 3rem;
+    margin-top:10rem;
+    width:50%;
+    margin:3rem;
+  }
+.new-tweet{
+  width: 80%;
+}
+.tweets-container {
+  padding-right: 3em;
+  margin-left: 3em;
+  width: 90%;
+}
+  
+}
