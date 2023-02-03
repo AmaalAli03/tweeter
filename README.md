@@ -5,10 +5,12 @@ Tweeter is a simple yet stylish, single-page Twitter clone.
 This app beautifully showcases HTML, CSS, JS, jQuery and AJAX front-end skills, and not only limited to but also my Node, Express back-end skills.
 This app is responsive to laptop/desktop, mobile and tablet viewing.
 ## Final Product
-!["Screenshot of Tweeter Desktop View"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Tweeter%20Desktop%20View.png?raw=true)
+
+!["Screenshot of Tweeter Desktop View page"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Tweeter%20Desktop%20View.png?raw=true)
 
 !["Screenshot of Tweeter Mobile:Tablet View page"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Tweeter%20Mobile:Tablet%20View.png?raw=true)
-!["Screenshot of register page"](https://github.com/AmaalAli03/tinyapp/blob/main/docs/RegisterForTinyApp.png?raw=true)
+!["Screenshot of Error Message: No characters written from Desktop View page"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Error%20Message:%20No%20characters%20written.png?raw=true)
+!["Screenshot of Error Message: Over character limit from Desktop View page"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Error%20Message%20:Over%20character%20limit.png?raw=true)
 
 ## Getting Started
 
