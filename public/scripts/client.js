@@ -9,6 +9,11 @@ $(document).ready(function() {
     $('.new-tweet').toggle();
     $('.tweet-words').focus();
   });
+  // $(window).scroll(function (event) {
+  //   var scroll = $(window).scrollTop();
+  //   // Do something
+  //   console.log(scroll);
+  // });
   //prevent XXS in the html
   const escape = function(str) {
     let div = document.createElement("div");
