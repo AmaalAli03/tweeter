@@ -4,6 +4,11 @@ Tweeter is a simple yet stylish, single-page Twitter clone.
 
 This app beautifully showcases HTML, CSS, JS, jQuery and AJAX front-end skills, and not only limited to but also my Node, Express back-end skills.
 This app is responsive to laptop/desktop, mobile and tablet viewing.
+## Final Product
+!["Screenshot of Tweeter Desktop View"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Tweeter%20Desktop%20View.png?raw=true)
+
+!["Screenshot of Tweeter Mobile:Tablet View page"](https://github.com/AmaalAli03/tweeter/blob/master/public/images/Tweeter%20Mobile:Tablet%20View.png?raw=true)
+!["Screenshot of register page"](https://github.com/AmaalAli03/tinyapp/blob/main/docs/RegisterForTinyApp.png?raw=true)
 
 ## Getting Started
 
