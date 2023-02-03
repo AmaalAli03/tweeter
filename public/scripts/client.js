@@ -1,20 +1,21 @@
-// const { application } = require("express");
-//browser doesnt recognize require because it doesnt know how to run it.(impossible)
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
 $(document).ready(function() {
-  $(".angles-down").on("click", function () {
+  $(".angles-down").on("click", function() {
     $('.new-tweet').toggle();
     $('.tweet-words').focus();
   });
+  //prevent XXS in the html
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+  //renderTweets
   const renderTweets = function(tweets) {
     // loops through tweets
     for (let tweet of tweets) {
@@ -25,6 +26,7 @@ $(document).ready(function() {
 
     }
   };
+  //creates tweet
   const createTweetElement = (tweet) => {
     const $tweet = `
     <div class="article-box">
@@ -52,7 +54,7 @@ $(document).ready(function() {
     return $tweet;
   };
 
-
+  //tweet post validation
   $('form').submit(function(event) {
     event.preventDefault();
     let tweetText = $("#tweet-text").val();
@@ -66,10 +68,8 @@ $(document).ready(function() {
       $('.tweet-error-message').html(errorText);
       $('.tweet-error-message').slideDown();
     } else {
-      // console.log(this)
       $('.tweet-error-message').slideUp();
       const data = $(this).serialize();
-      // console.log(data);
 
       $.ajax({
         type: "POST",
@@ -77,25 +77,20 @@ $(document).ready(function() {
         data: data,
         //reload and fetch the tweets
         success: loadTweets(),
-        // dataType: dataType
       });
     }
   });
-  
+  // load tweets and refresh after tweet made
   const loadTweets = () => {
-    // $(".tweets-container").empty();
-    // $(".form")[0].reset();
     $("#tweet-text").val("");
     $(".counter").text(140);
+
     $.ajax({
       url: `/tweets`,
-      // data: data,
       success: "success",
-      // dataType: dataType
     }).then((tweetData) => {
       renderTweets(tweetData);
     });
   };
   loadTweets();
-
 });

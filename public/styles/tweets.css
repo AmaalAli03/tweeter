@@ -1,25 +1,26 @@
-/* .tweets-container{
-  margin: 0 20rem;
-
-} */
 .article {
   border: 3px solid black;
   margin-top: 13px;
   padding: 10px;
   margin-bottom: 10px;
 }
+
 .article-box {
   transition: box-shadow 1s;
 }
+
 .article-box:hover {
   box-shadow: 7px 7px 15px rgb(71, 107, 153);
 }
-.icon{
+
+.icon {
   padding: 0 5px;
 }
-.icon:hover{
+
+.icon:hover {
   color:rgb(197, 170, 17);
 }
+
 .avatar-image img {
   display: flex;
   justify-content: start;
@@ -36,7 +37,8 @@
   display: flex;
   justify-content: right;
 }
-.tweet-icons:hover{
+
+.tweet-icons:hover {
   text-shadow:rgb(71, 107, 153) 4px 1px 20px;
 }
 
@@ -57,31 +59,29 @@
   padding-left: 11px;
   max-height: 118px;
 }
-.name{
-  /* display: flex;
-    justify-content: flex-end;
-    align-content: flex-start; */
-}
-.user-name{
+
+.user-name {
   color: rgb(147, 174, 211);
   
 }
+
 .article-box:hover .user-name {
   text-shadow:rgb(71, 107, 153) -1px 0px 2px;
 }
 
-.user-names{
+.user-names {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.avatar-username{
+
+.avatar-username {
   display:flex;
 }
-.tweet-footer2{
+
+.tweet-footer2 {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  /* margin-top: 25px; */
 }

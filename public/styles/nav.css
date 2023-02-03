@@ -3,29 +3,28 @@ nav {
   width: 100%;
   background-color: #545149;
   color: #FFFFFF;
-  /* font-family: "Bungee"; */
-
   padding: 1.5em ;
   position: fixed;
   top: 0;
 }
-.logo{
+
+.logo {
   font-family: "Bungee";
   font-size: xx-large;
 }
 
-
 .write-tweet {
   font-family: "Source Sans Pro";
   font-size: large;
-  /* color:#FFFFFF */
 }
-.fa-solid.fa-angles-down{
+
+.fa-solid.fa-angles-down {
   color: rgb(197, 170, 17);
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.bounce-1{
+
+.bounce-1 {
   margin-top: 10px;
   animation-name: bounce-1;
         animation-timing-function: linear;
@@ -36,16 +35,15 @@ nav {
         100% { transform: translateY(0); }
     }
 
-.angles-down{
+.angles-down {
   display:flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  /* color: red */
 }
-.nav-container{
+
+.nav-container {
   display: flex;
   width:100%;
   justify-content:space-between ;
-
 }

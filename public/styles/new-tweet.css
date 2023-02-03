@@ -8,15 +8,11 @@
 .tweet-button:hover {
   box-shadow: 0px 0px 5px 5px #545149b3;
 }
-.compose-tweet{
+
+.compose-tweet {
   margin-bottom: 10px;
 }
-/* .tweet-words{
-  font-weight: bold;
-  font-family: "Source Sans Pro";
-  border-bottom: 3px solid black ; 
-  
-} */
+
 .counter {
   font-weight: bold;
   font-family: "Bungee";
@@ -45,8 +41,6 @@ textarea {
   color: red
 }
 
-/* .url('https://i.imgur.com/Z8q7ww7.png');
-} */
 .tweet-error-message {
   color: #d21d1d;
   display: none;
@@ -58,6 +52,7 @@ textarea {
   font-weight: bold;
   box-shadow: 0px 0px 5px 5px #9a2828d4;
 }
-.new-tweet{
+
+.new-tweet {
   display:none;
 }

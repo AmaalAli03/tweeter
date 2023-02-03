@@ -7,7 +7,10 @@ html {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,8 +19,7 @@ html {
  */
 
 body {
-  display:flex;
-  /* justify-content: center; */
+  display: flex;
   align-items: center;
   flex-direction: column;
   color: #545149;
@@ -29,17 +31,16 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- /* .header-main{
-  width:100vw;
-   } */
- .main-container{
- width: 90%;
 
+.main-container {
+  width: 90%;
   background-color: #f4f1ec;
- }
- .main-title{
+}
+
+.main-title {
   font-family: "Source Sans Pro";
- }
- .main-text{
+}
+
+.main-text {
   font-family: "Source Sans Pro";
- }
+}
